@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: fa23a1982ab00fc49a7be654429012e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -176496574020732907
+    second: letterstrim_a
+  - first:
+      213: 764503426766234865
+    second: letterstrim_b
+  - first:
+      213: 9082517257364100326
+    second: letterstrim_c
+  - first:
+      213: 4130136562433693932
+    second: letterstrim_d
+  - first:
+      213: 5722091899423641776
+    second: letterstrim_e
+  - first:
+      213: -9064067724261344693
+    second: letterstrim_f
+  - first:
+      213: 7758520336292259609
+    second: letterstrim_g
+  - first:
+      213: 1466228950407567423
+    second: letterstrim_h
+  - first:
+      213: -7290834564014582370
+    second: letterstrim_i
+  - first:
+      213: 9124696567850856573
+    second: letterstrim_j
+  - first:
+      213: 4217445212440181322
+    second: letterstrim_k
+  - first:
+      213: -7827694415797875081
+    second: letterstrim_l
+  - first:
+      213: -5518954297754231257
+    second: letterstrim_m
+  - first:
+      213: -5851635186026372359
+    second: letterstrim_n
+  - first:
+      213: 2872719846274496412
+    second: letterstrim_o
+  - first:
+      213: -5805231181921586237
+    second: letterstrim_p
+  - first:
+      213: 7289482670679777709
+    second: letterstrim_q
+  - first:
+      213: 2442812396652484879
+    second: letterstrim_r
+  - first:
+      213: -437558116537281302
+    second: letterstrim_s
+  - first:
+      213: 2173275986672094881
+    second: letterstrim_t
+  - first:
+      213: -1149573441879301897
+    second: letterstrim_u
+  - first:
+      213: 4657332364191589508
+    second: letterstrim_v
+  - first:
+      213: -5537371042038825395
+    second: letterstrim_w
+  - first:
+      213: 8948667428868687109
+    second: letterstrim_x
+  - first:
+      213: -854295962963457426
+    second: letterstrim_y
+  - first:
+      213: 6562362236050610789
+    second: letterstrim_z
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: letterstrim_a
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518bb611d45fc8df0800000000000000
+      internalID: -176496574020732907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_b
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 407
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f468fde0df0c9a00800000000000000
+      internalID: 764503426766234865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_c
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 407
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4da8703559b0e70800000000000000
+      internalID: 9082517257364100326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_d
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 407
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce896b53251315930800000000000000
+      internalID: 4130136562433693932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_e
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 407
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0594df344f86f40800000000000000
+      internalID: 5722091899423641776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_f
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 407
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ab153ad66f53280800000000000000
+      internalID: -9064067724261344693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_g
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9172853b32dcbab60800000000000000
+      internalID: 7758520336292259609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_h
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 305
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38df644677195410800000000000000
+      internalID: 1466228950407567423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_i
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 305
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9555cfa790c1da90800000000000000
+      internalID: -7290834564014582370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_j
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 304
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70f9f90f2f61ae70800000000000000
+      internalID: 9124696567850856573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_k
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 305
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3b236310678a30800000000000000
+      internalID: 4217445212440181322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_l
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 305
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e0f08d6617e5390800000000000000
+      internalID: -7827694415797875081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_m
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e5ebe8e4cb863b0800000000000000
+      internalID: -5518954297754231257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_n
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 204
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2a8b53dc0dacea0800000000000000
+      internalID: -5851635186026372359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_o
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 204
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97f768da73fdd720800000000000000
+      internalID: 2872719846274496412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_p
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 204
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3fa8a5ffcaf6fa0800000000000000
+      internalID: -5805231181921586237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_q
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 204
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1eb3e1ed1792560800000000000000
+      internalID: 7289482670679777709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_r
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 204
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f095463aeec96e120800000000000000
+      internalID: 2442812396652484879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_s
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4d437163b7de9f0800000000000000
+      internalID: -437558116537281302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_t
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae0a70def6092e10800000000000000
+      internalID: 2173275986672094881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_u
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 102
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0af899b05eb00f0800000000000000
+      internalID: -1149573441879301897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_v
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 102
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484e1901c1b22a040800000000000000
+      internalID: 4657332364191589508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_w
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 102
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ebdb1206e4723b0800000000000000
+      internalID: -5537371042038825395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_x
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 102
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50583de4d9d003c70800000000000000
+      internalID: 8948667428868687109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_y
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a4382195ee424f0800000000000000
+      internalID: -854295962963457426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letterstrim_z
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 84
+        height: 84
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a1c3f4fa1321b50800000000000000
+      internalID: 6562362236050610789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

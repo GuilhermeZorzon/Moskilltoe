@@ -20,7 +20,6 @@ public class KeyboardManager : MonoBehaviour
 
     private void GameManagerOnGameStateChanged(GameState state)
     {
-        playersTurnText.gameObject.SetActive(state == GameState.PlayerTurn);
         keyboardCanvas.gameObject.SetActive(state == GameState.PlayerTurn);
         if(GameManager.instance.gameState == GameState.KillingMosquitoes)
         {

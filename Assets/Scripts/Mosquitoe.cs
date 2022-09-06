@@ -44,7 +44,7 @@ public class Mosquitoe : MonoBehaviour
         InstanciateLetterImages();
         AssignLetters();
         SetImagePositions();
-        AssignImages();
+        AssignImagesToLetters();
     }
 
     void Update()
@@ -102,7 +102,7 @@ public class Mosquitoe : MonoBehaviour
         currentAssignedText = this.assignedText;
     }
 
-    void AssignImages()
+    void AssignImagesToLetters()
     {
         int childrenImageCount = 0;
         var mosquitoeCanvas = this.GetComponentInChildren<Canvas>();

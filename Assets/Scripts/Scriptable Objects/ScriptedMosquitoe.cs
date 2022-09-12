@@ -8,4 +8,6 @@ public class ScriptedMosquitoe : ScriptableObject
     public int assignedTextLength;
     public float speed;
     public Sprite _sprite;
+
+    public List<ScriptableAction> checkLetterActions;
 }

@@ -44,7 +44,7 @@ public class Mosquitoe : MonoBehaviour
         InstanciateLetterImages();
         AssignLetters();
         SetImagePositions();
-        AssignImages();
+        AssignImagesToLetters();
     }
 
     void Update()
@@ -59,14 +59,8 @@ public class Mosquitoe : MonoBehaviour
 
     public void RemoveLetter(string letterToRemove)
     {
-        Debug.Log("this is letter to remove" + letterToRemove);
         int index = this.currentAssignedText.IndexOf(letterToRemove);
-        Debug.Log("this is index" + index);
         this.currentAssignedText.RemoveAt(index);
-        foreach(string letter in currentAssignedText)
-        {
-            Debug.Log("current assigned text letter" + letter);
-        }
         RemoveChildrenImage(letterToRemove);
     }
 
@@ -102,7 +96,7 @@ public class Mosquitoe : MonoBehaviour
         currentAssignedText = this.assignedText;
     }
 
-    void AssignImages()
+    void AssignImagesToLetters()
     {
         int childrenImageCount = 0;
         var mosquitoeCanvas = this.GetComponentInChildren<Canvas>();
@@ -169,6 +163,14 @@ public class Mosquitoe : MonoBehaviour
         {
             children.transform.localPosition = this.imagePositions[childrenImageCount];
             childrenImageCount++;
+        }
+    }
+
+    public void CheckScriptedLetterActions(Mosquitoe mosquitoe, string letterToCheck)
+    {
+        if (_scriptedMosquitoe.checkLetterActions.Count == 1)
+        {
+            _scriptedMosquitoe.checkLetterActions[0].CheckLetters(mosquitoe, letterToCheck);
         }
     }
 }

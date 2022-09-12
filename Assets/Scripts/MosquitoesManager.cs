@@ -7,7 +7,6 @@ public class MosquitoesManager : MonoBehaviour
 {
     public static MosquitoesManager instance;
     private Rigidbody2D _rb;
-    private bool isDestoyed = false;
     private bool isFlying = false;
 
     void Awake()
@@ -44,23 +43,7 @@ public class MosquitoesManager : MonoBehaviour
     {
         foreach (Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)
         {
-            if(mosquitoe.assignedText.Contains(letter) && !mosquitoe.isDestoyed)
-            {
-                if(mosquitoe.currentAssignedText.Count == 1)
-                {
-                    this.isDestoyed = true;
-                    DestroyMosquitoe(mosquitoe);
-                    MosquitoeSpawner.instance.mosquitoesToRemove.Add(mosquitoe);
-                }
-                mosquitoe.RemoveLetter(letter);
-            }
+            mosquitoe.CheckScriptedLetterActions(mosquitoe, letter);
         }
-    }
-
-    void DestroyMosquitoe(Mosquitoe mosquitoe) 
-    {
-        Debug.Log("destoyed this one: " + mosquitoe.id + " with letter " + mosquitoe.assignedText);
-        MosquitoeSpawner.instance.DecreaseMosquitoeCounter();
-        Destroy(mosquitoe.gameObject);
     }
 }

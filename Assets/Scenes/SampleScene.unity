@@ -2875,6 +2875,9 @@ MonoBehaviour:
   spawnableMosquitoes:
   - {fileID: 11400000, guid: 8f775c8e3406d864aa7cd25d8dd3c8c4, type: 2}
   - {fileID: 11400000, guid: 46330a8c4f798fc41933edf875cbc387, type: 2}
+  - {fileID: 11400000, guid: 8fd6f65da7110fd469a872775f9aa959, type: 2}
+  - {fileID: 11400000, guid: 9deca1d1432fdfa4c98034f509d1bf58, type: 2}
+  - {fileID: 11400000, guid: 86e909deed536f047b8d816045c772af, type: 2}
   mosquitoePrefab: {fileID: -6289549763038833526, guid: 7827ae98be46edf40a149091b8249cf8, type: 3}
   spawnedMosquitoes: []
   mosquitoesToRemove: []

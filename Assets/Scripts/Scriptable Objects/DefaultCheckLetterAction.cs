@@ -7,9 +7,9 @@ public class DefaultCheckLetterAction : ScriptableAction
 {
     public override void CheckLetters(Mosquitoe mosquitoe, string letterToCheck)
     {
-      if(mosquitoe.assignedText.Contains(letterToCheck) && !mosquitoe.isDestoyed)
+      if (mosquitoe.assignedText.Contains(letterToCheck) && !mosquitoe.isDestoyed)
       {
-        if(mosquitoe.currentAssignedText.Count == 1)
+        if (mosquitoe.currentAssignedText.Count == 1)
         {
           mosquitoe.isDestoyed = true;
           DestroyMosquitoe(mosquitoe);

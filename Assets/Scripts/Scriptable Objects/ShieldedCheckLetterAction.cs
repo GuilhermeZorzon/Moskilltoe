@@ -7,11 +7,6 @@ public class ShieldedCheckLetterAction : ScriptableAction
 {
     public override void CheckLetters(Mosquitoe mosquitoe, string letterToCheck)
     {
-      foreach (string letter in mosquitoe.assignedText)
-      {
-        Debug.Log(System.DateTime.Now.ToLongTimeString() + " Letter for mosquitoe " + letter);
-      }
-
       if (mosquitoe.assignedText.Count > 0 && mosquitoe.assignedText[0] == letterToCheck && !mosquitoe.isDestoyed)
       {
         if (mosquitoe.currentAssignedText.Count == 1)

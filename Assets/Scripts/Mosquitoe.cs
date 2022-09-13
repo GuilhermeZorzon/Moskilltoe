@@ -27,6 +27,7 @@ public class Mosquitoe : MonoBehaviour
     };
     public bool isDestoyed = false;
     public float speed;
+    public int timesHit = 0;
     public bool isFlying {get; private set;} = false;
     Sprite[] spriteArray;
     List<Vector3> imagePositions = new List<Vector3>();

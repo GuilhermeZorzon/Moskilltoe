@@ -56,7 +56,7 @@ public class MosquitoeSpawner : MonoBehaviour
 
 	void SpawnMosquitoe()
 	{
-		var whichToSpawn = Random.Range(0, 2);
+		var whichToSpawn = Random.Range(0, spawnableMosquitoes.Count);
 		ScriptedMosquitoe scriptedMosquitoe = spawnableMosquitoes[whichToSpawn];
 		var positionToSpawn = FindPositionToSpawn();
 		Mosquitoe mosquitoe = Instantiate(mosquitoePrefab, positionToSpawn, Quaternion.identity);

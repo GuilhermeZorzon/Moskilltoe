@@ -29,7 +29,8 @@ public class Mosquitoe : MonoBehaviour
     public float speed;
     public int timesHit = 0;
     public bool isFlying {get; private set;} = false;
-    Sprite[] spriteArray;
+    Sprite[] lettersSpriteArray;
+    Sprite[] shieldedLettersSpriteArray;
     List<Vector3> imagePositions = new List<Vector3>();
     List<GameObject> childrenImages = new List<GameObject>();
 
@@ -80,7 +81,8 @@ public class Mosquitoe : MonoBehaviour
 
     void InstanciateLetterImages()
     {
-        spriteArray = Resources.LoadAll<Sprite>("letterstrim");
+        lettersSpriteArray = Resources.LoadAll<Sprite>("letterstrim");
+        shieldedLettersSpriteArray = Resources.LoadAll<Sprite>("shieldedletterstrim");
     }
 
     void AssignLetters()
@@ -123,7 +125,19 @@ public class Mosquitoe : MonoBehaviour
     Sprite AssignLetterImage(int childrenImageCount)
     {
         string assignedTextLetter = this.assignedText[childrenImageCount];
-        return spriteArray[this.letterToIndex[assignedTextLetter]];
+        if (this._scriptedMosquitoe.name == "ShieldedMosquitoe" && childrenImageCount > 0)
+        {
+            return shieldedLettersSpriteArray[this.letterToIndex[assignedTextLetter]];
+        }
+
+        return lettersSpriteArray[this.letterToIndex[assignedTextLetter]];
+    }
+
+    public void RemoveShieldFromLetter()
+    {
+        GameObject children = this.childrenImages[0];
+        Image childrenImage = children.GetComponent<Image>();
+        childrenImage.sprite = AssignLetterImage(0);
     }
 
     void SetImagePositions()
@@ -173,7 +187,6 @@ public class Mosquitoe : MonoBehaviour
 
     void ReassignImagePositions()
     {
-        Debug.Log("children Images count here " + this.childrenImages.Count);
         this.imagePositions = new List<Vector3>();
         SetImagePositions();
         int childrenImageCount = 0;

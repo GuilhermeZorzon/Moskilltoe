@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: 61cc7abb76ab7fb4798c3b769d1b0426
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6861273897695298837
+    second: shieldedletterstrim_0
+  - first:
+      213: -2303469289816068423
+    second: shieldedletterstrim_1
+  - first:
+      213: -1704410388971171416
+    second: shieldedletterstrim_2
+  - first:
+      213: 8775999662332860778
+    second: shieldedletterstrim_3
+  - first:
+      213: -7796201996139531859
+    second: shieldedletterstrim_4
+  - first:
+      213: 7101842131957323408
+    second: shieldedletterstrim_5
+  - first:
+      213: -186412501353789353
+    second: shieldedletterstrim_6
+  - first:
+      213: 2133201197292241544
+    second: shieldedletterstrim_7
+  - first:
+      213: 2537681620425864256
+    second: shieldedletterstrim_8
+  - first:
+      213: 3872064018440705784
+    second: shieldedletterstrim_9
+  - first:
+      213: 5210972210831811193
+    second: shieldedletterstrim_10
+  - first:
+      213: 1188003815824576531
+    second: shieldedletterstrim_11
+  - first:
+      213: -3619322110425913227
+    second: shieldedletterstrim_12
+  - first:
+      213: 4951239828182268654
+    second: shieldedletterstrim_13
+  - first:
+      213: 1485750968514811459
+    second: shieldedletterstrim_14
+  - first:
+      213: -4617092056239160703
+    second: shieldedletterstrim_15
+  - first:
+      213: -7918469793071025761
+    second: shieldedletterstrim_16
+  - first:
+      213: -3294369680903080651
+    second: shieldedletterstrim_17
+  - first:
+      213: -3412781951710264801
+    second: shieldedletterstrim_18
+  - first:
+      213: -8406463709235354622
+    second: shieldedletterstrim_19
+  - first:
+      213: -5586386985348502060
+    second: shieldedletterstrim_20
+  - first:
+      213: 1875156198468472701
+    second: shieldedletterstrim_21
+  - first:
+      213: -1731275547893799724
+    second: shieldedletterstrim_22
+  - first:
+      213: 5907221470149410175
+    second: shieldedletterstrim_23
+  - first:
+      213: -2099511227439600396
+    second: shieldedletterstrim_24
+  - first:
+      213: 8619208404636360437
+    second: shieldedletterstrim_25
+  - first:
+      213: 6610169898520896442
+    second: shieldedletterstrim_26
+  - first:
+      213: 5423084605058534260
+    second: shieldedletterstrim_27
+  - first:
+      213: -8028257542758404981
+    second: shieldedletterstrim_28
+  - first:
+      213: 6805400963682235351
+    second: shieldedletterstrim_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shieldedletterstrim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515c9c2e144283f50800000000000000
+      internalID: 6861273897695298837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 407
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9beed7d92ee6800e0800000000000000
+      internalID: -2303469289816068423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 407
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a153e518c7b858e0800000000000000
+      internalID: -1704410388971171416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 407
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a695c46123d9ac970800000000000000
+      internalID: 8775999662332860778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 407
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da179ee27935ec390800000000000000
+      internalID: -7796201996139531859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_5
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 407
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0961836bacfce8260800000000000000
+      internalID: 7101842131957323408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7588d1351dab96df0800000000000000
+      internalID: -186412501353789353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 305
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882ca0fcf27aa9d10800000000000000
+      internalID: 2133201197292241544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 305
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04475821df7a73320800000000000000
+      internalID: 2537681620425864256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_9
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 305
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6dabea5b55cb530800000000000000
+      internalID: 3872064018440705784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 305
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972ef09ed97115840800000000000000
+      internalID: 5210972210831811193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_11
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 305
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310580a1d23ac7010800000000000000
+      internalID: 1188003815824576531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578a85077b595cdc0800000000000000
+      internalID: -3619322110425913227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_13
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 203
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaf194146656b440800000000000000
+      internalID: 4951239828182268654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 203
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346940f42a27e9410800000000000000
+      internalID: 1485750968514811459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_15
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 203
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182469cbc3bccefb0800000000000000
+      internalID: -4617092056239160703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_16
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 203
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9137535da1fb1290800000000000000
+      internalID: -7918469793071025761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_17
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 203
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53574f2ca3c0842d0800000000000000
+      internalID: -3294369680903080651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12027885ec53a0d0800000000000000
+      internalID: -3412781951710264801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_19
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 102
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20460d9bbcd365b80800000000000000
+      internalID: -8406463709235354622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_20
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 102
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddef6082aa2972b0800000000000000
+      internalID: -5586386985348502060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 102
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fc514a0a4e50a10800000000000000
+      internalID: 1875156198468472701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_22
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 102
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d46877df0649f7e0800000000000000
+      internalID: -1731275547893799724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_23
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 102
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7df0d911aaaaf150800000000000000
+      internalID: 5907221470149410175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fca48e89a90dd2e0800000000000000
+      internalID: -2099511227439600396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_25
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe5963a0649d9770800000000000000
+      internalID: 8619208404636360437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_26
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab36152208a0cbb50800000000000000
+      internalID: 6610169898520896442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_27
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b476f27baa24b40800000000000000
+      internalID: 5423084605058534260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_28
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ce886ec46e59090800000000000000
+      internalID: -8028257542758404981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldedletterstrim_29
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d37162be14a17e50800000000000000
+      internalID: 6805400963682235351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,13 +9,15 @@ public class ShieldedCheckLetterAction : ScriptableAction
     {
       if (mosquitoe.assignedText.Count > 0 && mosquitoe.assignedText[0] == letterToCheck && !mosquitoe.isDestoyed)
       {
-        if (mosquitoe.currentAssignedText.Count == 1)
+        mosquitoe.RemoveLetter(letterToCheck);
+        if (mosquitoe.currentAssignedText.Count > 0)
         {
+          mosquitoe.RemoveShieldFromLetter();
+        } else {
           mosquitoe.isDestoyed = true;
           DestroyMosquitoe(mosquitoe);
           MosquitoeSpawner.instance.mosquitoesToRemove.Add(mosquitoe);
         }
-        mosquitoe.RemoveLetter(letterToCheck);
       }
     }
 }

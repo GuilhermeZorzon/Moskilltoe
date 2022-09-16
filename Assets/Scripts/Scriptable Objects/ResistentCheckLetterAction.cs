@@ -10,6 +10,8 @@ public class ResistentCheckLetterAction : ScriptableAction
     if (mosquitoe.assignedText.Contains(letterToCheck) && !mosquitoe.isDestoyed)
     {
       mosquitoe.timesHit += 1;
+      mosquitoe.ReduceChildrenImageSize(letterToCheck);
+
       if (mosquitoe.timesHit == 3)
       {
         mosquitoe.isDestoyed = true;

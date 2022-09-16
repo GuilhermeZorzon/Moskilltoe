@@ -29,7 +29,8 @@ public class Mosquitoe : MonoBehaviour
     public float speed;
     public int timesHit = 0;
     public bool isFlying {get; private set;} = false;
-    Sprite[] spriteArray;
+    Sprite[] lettersSpriteArray;
+    Sprite[] shieldedLettersSpriteArray;
     List<Vector3> imagePositions = new List<Vector3>();
     List<GameObject> childrenImages = new List<GameObject>();
 
@@ -80,7 +81,8 @@ public class Mosquitoe : MonoBehaviour
 
     void InstanciateLetterImages()
     {
-        spriteArray = Resources.LoadAll<Sprite>("letterstrim");
+        lettersSpriteArray = Resources.LoadAll<Sprite>("letterstrim");
+        shieldedLettersSpriteArray = Resources.LoadAll<Sprite>("shieldedletterstrim");
     }
 
     void AssignLetters()
@@ -106,7 +108,12 @@ public class Mosquitoe : MonoBehaviour
             var childrenImageGameObject = new GameObject("ChildrenImage" + this.assignedText[childrenImageCount]);
             childrenImageGameObject.transform.SetParent(mosquitoeCanvas.transform, false);
             childrenImageGameObject.AddComponent<Image>();
-            childrenImageGameObject.transform.localScale = new Vector3(0.0125f, 0.0125f, 0f);
+            Vector3 imageLocalScale = new Vector3(0.0125f, 0.0125f, 0f);
+            if (this._scriptedMosquitoe.name == "ResistentMosquitoe")
+            {
+                imageLocalScale = new Vector3(0.0175f, 0.0175f, 0f);
+            }
+            childrenImageGameObject.transform.localScale = imageLocalScale;
             childrenImageGameObject.transform.localPosition = this.imagePositions[childrenImageCount];
             var childrenImage = childrenImageGameObject.GetComponent<Image>();
             childrenImage.sprite = AssignLetterImage(childrenImageCount);
@@ -118,7 +125,19 @@ public class Mosquitoe : MonoBehaviour
     Sprite AssignLetterImage(int childrenImageCount)
     {
         string assignedTextLetter = this.assignedText[childrenImageCount];
-        return spriteArray[this.letterToIndex[assignedTextLetter]];
+        if (this._scriptedMosquitoe.name == "ShieldedMosquitoe" && childrenImageCount > 0)
+        {
+            return shieldedLettersSpriteArray[this.letterToIndex[assignedTextLetter]];
+        }
+
+        return lettersSpriteArray[this.letterToIndex[assignedTextLetter]];
+    }
+
+    public void RemoveShieldFromLetter()
+    {
+        GameObject children = this.childrenImages[0];
+        Image childrenImage = children.GetComponent<Image>();
+        childrenImage.sprite = AssignLetterImage(0);
     }
 
     void SetImagePositions()
@@ -154,9 +173,20 @@ public class Mosquitoe : MonoBehaviour
         ReassignImagePositions();
     }
 
+    public void ReduceChildrenImageSize(string letterToReduce)
+    {
+        foreach (GameObject children in this.childrenImages)
+        {
+            if (children.name == "ChildrenImage" + letterToReduce)
+            {
+                children.transform.localScale = new Vector3(0.0175f - (0.0025f * this.timesHit), 0.0175f - (0.0025f * this.timesHit), 0f);
+                break;
+            }
+        }
+    }
+
     void ReassignImagePositions()
     {
-        Debug.Log("children Images count here " + this.childrenImages.Count);
         this.imagePositions = new List<Vector3>();
         SetImagePositions();
         int childrenImageCount = 0;

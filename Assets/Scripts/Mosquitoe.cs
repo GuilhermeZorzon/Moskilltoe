@@ -106,7 +106,12 @@ public class Mosquitoe : MonoBehaviour
             var childrenImageGameObject = new GameObject("ChildrenImage" + this.assignedText[childrenImageCount]);
             childrenImageGameObject.transform.SetParent(mosquitoeCanvas.transform, false);
             childrenImageGameObject.AddComponent<Image>();
-            childrenImageGameObject.transform.localScale = new Vector3(0.0125f, 0.0125f, 0f);
+            Vector3 imageLocalScale = new Vector3(0.0125f, 0.0125f, 0f);
+            if (this._scriptedMosquitoe.name == "ResistentMosquitoe")
+            {
+                imageLocalScale = new Vector3(0.0175f, 0.0175f, 0f);
+            }
+            childrenImageGameObject.transform.localScale = imageLocalScale;
             childrenImageGameObject.transform.localPosition = this.imagePositions[childrenImageCount];
             var childrenImage = childrenImageGameObject.GetComponent<Image>();
             childrenImage.sprite = AssignLetterImage(childrenImageCount);
@@ -152,6 +157,18 @@ public class Mosquitoe : MonoBehaviour
             }
         }
         ReassignImagePositions();
+    }
+
+    public void ReduceChildrenImageSize(string letterToReduce)
+    {
+        foreach (GameObject children in this.childrenImages)
+        {
+            if (children.name == "ChildrenImage" + letterToReduce)
+            {
+                children.transform.localScale = new Vector3(0.0175f - (0.0025f * this.timesHit), 0.0175f - (0.0025f * this.timesHit), 0f);
+                break;
+            }
+        }
     }
 
     void ReassignImagePositions()

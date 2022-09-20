@@ -72,7 +72,9 @@ public class Mosquitoe : MonoBehaviour
         if(this && !this.isDestoyed)
         {
             this.isFlying = true;
+            this._scriptedMosquitoe.flySound.Play();
             await Task.Delay(1500);
+            this._scriptedMosquitoe.flySound.Stop();
             this.isFlying = false;
         }
 

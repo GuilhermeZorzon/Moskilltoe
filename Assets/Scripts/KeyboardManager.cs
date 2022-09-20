@@ -11,6 +11,7 @@ public class KeyboardManager : MonoBehaviour
 
     [SerializeField] Text playersTurnText;
     [SerializeField] Canvas keyboardCanvas;
+    public ScriptableSound buttonSelectSound;
 
     void Awake()
     {
@@ -36,6 +37,7 @@ public class KeyboardManager : MonoBehaviour
     {
         if(GameManager.instance.gameState == GameState.PlayerTurn)
         {
+            buttonSelectSound.Play();
             increaseChosenLettersCount();
             chosenLetters.Add(letter);
             if(this.chosenLettersCount == 3)

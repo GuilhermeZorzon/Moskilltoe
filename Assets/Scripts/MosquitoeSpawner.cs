@@ -9,14 +9,14 @@ public class MosquitoeSpawner : MonoBehaviour
 	public static MosquitoeSpawner instance;
 	public List<ScriptedMosquitoe> spawnableMosquitoes = new List<ScriptedMosquitoe>();
 	[SerializeField] Mosquitoe mosquitoePrefab;
-	private int mosquitoeCount = 0;
+	int mosquitoeCount = 0;
+	int spawnedMosquitoesInWave = 0;
 	private bool isSpawning = false;
-
 	public List<Mosquitoe> spawnedMosquitoes = new List<Mosquitoe>();
 	public List<Mosquitoe> mosquitoesToRemove = new List<Mosquitoe>();
 	public List<float> possibleYPositions = new List<float>() {-0.85f, 1.35f, 3.65f};
 	public List<float> occupiedYPositions = new List<float>();
-	public int waveCount {get; private set;} = 0; 
+	public int waveCount {get; private set;} = 0;
 
 	void Awake()
 	{
@@ -29,6 +29,7 @@ public class MosquitoeSpawner : MonoBehaviour
 		if(GameManager.instance.gameState == GameState.SpawningMosquitoes)
 		{
 			await SpawnMosquitoes();
+			this.waveCount++;
 			this.occupiedYPositions = new List<float>();
 			GameManager.instance.UpdateGameState(GameState.PlayerTurn);
 		}
@@ -43,10 +44,12 @@ public class MosquitoeSpawner : MonoBehaviour
 	{
 		this.isSpawning = true;
 
-		while (mosquitoeCount < 2)
+		this.spawnedMosquitoesInWave = 0;
+		int numberOfMosquitoesInWave = GetNumberOfMosquitoesInWave();
+		while (spawnedMosquitoesInWave < numberOfMosquitoesInWave)
 		{
 			SpawnMosquitoe();
-			await Task.Delay(750);
+			await Task.Delay(600);
 		}
 
 		this.isSpawning = false;
@@ -56,8 +59,7 @@ public class MosquitoeSpawner : MonoBehaviour
 
 	void SpawnMosquitoe()
 	{
-		var whichToSpawn = Random.Range(0, spawnableMosquitoes.Count);
-		ScriptedMosquitoe scriptedMosquitoe = spawnableMosquitoes[whichToSpawn];
+		ScriptedMosquitoe scriptedMosquitoe = GetMosquitoeToSpawn();
 		var positionToSpawn = FindPositionToSpawn();
 		Mosquitoe mosquitoe = Instantiate(mosquitoePrefab, positionToSpawn, Quaternion.identity);
 		mosquitoe._scriptedMosquitoe = scriptedMosquitoe;
@@ -65,6 +67,59 @@ public class MosquitoeSpawner : MonoBehaviour
 		
 		spawnedMosquitoes.Add(mosquitoe);
 		IncreaseMosquitoeCount();
+		this.spawnedMosquitoesInWave++;
+	}
+
+	ScriptedMosquitoe GetMosquitoeToSpawn()
+	{
+		if (this.waveCount == 0)
+		{
+			return spawnableMosquitoes[0];
+		}
+		var whichToSpawn = Random.Range(0, spawnableMosquitoes.Count);
+		ScriptedMosquitoe scriptedMosquitoe = spawnableMosquitoes[whichToSpawn];
+		return scriptedMosquitoe;
+	}
+
+	int GetNumberOfMosquitoesInWave()
+	{
+		int numberOfMosquitoesInWave = 1;
+
+		switch (this.waveCount)
+		{
+			case 0:
+				break;
+			case var expression when this.waveCount <= 2:
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {40, 60}, new List<int>() {1, 2});
+				break;
+			case var expression when this.waveCount <= 5:
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {30, 50, 20}, new List<int>() {1, 2, 3});
+				break;
+			default:
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {25, 45, 30}, new List<int>() {1, 2, 3});
+				break;
+		}
+
+		return numberOfMosquitoesInWave;
+	}
+
+	int GetNumberByProbability(List<int> probabilities, List<int> numbers)
+	{
+		int probabilityMeasure = Random.Range(0, 100);
+		int currentProbabilitySum = 0;
+		int currentIndex = 0;
+
+		while (currentIndex < probabilities.Count)
+		{
+			if (probabilityMeasure <= currentProbabilitySum + probabilities[currentIndex])
+			{
+				return numbers[currentIndex];
+			}
+			currentProbabilitySum += probabilities[currentIndex];
+			currentIndex++;
+		}
+
+		return numbers[0];
 	}
 
 	public Vector3 FindPositionToSpawn()

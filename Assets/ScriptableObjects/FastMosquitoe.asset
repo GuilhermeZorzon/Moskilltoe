@@ -17,3 +17,4 @@ MonoBehaviour:
   _sprite: {fileID: 21300000, guid: aafc0cc9da2bd234d8f10e44484430c4, type: 3}
   checkLetterActions:
   - {fileID: 11400000, guid: 4fa6fd8a6deb08a43b5e69d12c49419a, type: 2}
+  flySound: {fileID: 11400000, guid: a433641c21f838846925338a0dd2ff0d, type: 2}

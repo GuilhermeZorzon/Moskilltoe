@@ -10,4 +10,5 @@ public class ScriptedMosquitoe : ScriptableObject
     public Sprite _sprite;
 
     public List<ScriptableAction> checkLetterActions;
+    public ScriptableSound flySound;
 }

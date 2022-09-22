@@ -157,4 +157,14 @@ public class MosquitoeSpawner : MonoBehaviour
 	{
 		mosquitoeCount++;
 	}
+
+	public void ResetData()
+	{
+		mosquitoeCount = 0;
+		spawnedMosquitoesInWave = 0;
+		spawnedMosquitoes = new List<Mosquitoe>();
+		mosquitoesToRemove = new List<Mosquitoe>();
+		occupiedYPositions = new List<float>();
+		waveCount = 0;
+	}
 }

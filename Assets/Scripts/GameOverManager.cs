@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollisionManager : MonoBehaviour
+public class GameOverManager : MonoBehaviour
 {
-    public static CollisionManager instance;
+    public static GameOverManager instance;
     public bool isGameOver {get; private set;} = false;
     [SerializeField] Canvas gameOverCanvas;
 
@@ -28,5 +28,14 @@ public class CollisionManager : MonoBehaviour
             GameManager.instance.UpdateGameState(GameState.GameOver);
             isGameOver = true;
         }
+    }
+
+    public void RestartGame()
+    {
+        MosquitoesManager.instance.DestroyAll();
+        MosquitoeSpawner.instance.ResetData();
+        this.isGameOver = false;
+        gameOverCanvas.GetComponent<Canvas>().enabled = false;
+        GameManager.instance.UpdateGameState(GameState.SpawningMosquitoes);
     }
 }

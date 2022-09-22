@@ -26,7 +26,7 @@ public class MosquitoesManager : MonoBehaviour
                 tasks.Add(mosquitoe.FlyMosquitoes());
             }
             await Task.WhenAll(tasks);
-            if(!CollisionManager.instance.isGameOver)
+            if(!GameOverManager.instance.isGameOver)
             {
                 Debug.Log("Passing turn to spawner");
                 GameManager.instance.UpdateGameState(GameState.SpawningMosquitoes);
@@ -44,6 +44,16 @@ public class MosquitoesManager : MonoBehaviour
         foreach (Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)
         {
             mosquitoe.CheckScriptedLetterActions(mosquitoe, letter);
+        }
+    }
+
+    public void DestroyAll()
+    {
+        foreach (Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)
+        {
+            Debug.Log("Destroying a mosquitoe " + mosquitoe._scriptedMosquitoe.speed);
+            mosquitoe.isDestoyed = true;
+            Destroy(mosquitoe.gameObject);
         }
     }
 }

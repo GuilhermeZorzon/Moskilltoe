@@ -51,7 +51,7 @@ public class Mosquitoe : MonoBehaviour
 
     void Update()
     {
-        if(this.isFlying && !CollisionManager.instance.isGameOver)
+        if(this.isFlying && !GameOverManager.instance.isGameOver)
         {
             _rb.velocity = (new Vector3(1,0,0) * this.speed);
         } else {

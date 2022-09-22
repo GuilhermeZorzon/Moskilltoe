@@ -5,8 +5,8 @@ using UnityEngine;
 public class ScriptableSound : ScriptableObject
 {
     public AudioClip clip;
-    public float volume;
-    public float pitch;
+    public float volume = 1;
+    public float pitch = 1;
 
     private AudioSource audioSource = null;
     

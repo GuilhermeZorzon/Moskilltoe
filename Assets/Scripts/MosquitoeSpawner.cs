@@ -93,10 +93,16 @@ public class MosquitoeSpawner : MonoBehaviour
 				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {40, 60}, new List<int>() {1, 2});
 				break;
 			case var expression when this.waveCount <= 5:
-				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {30, 50, 20}, new List<int>() {1, 2, 3});
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {28, 52, 20}, new List<int>() {1, 2, 3});
+				break;
+			case var expression when this.waveCount <= 8:
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {20, 55, 25}, new List<int>() {1, 2, 3});
+				break;
+			case var expression when this.waveCount <= 12:
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {12, 59, 29}, new List<int>() {1, 2, 3});
 				break;
 			default:
-				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {25, 45, 30}, new List<int>() {1, 2, 3});
+				numberOfMosquitoesInWave = GetNumberByProbability(new List<int>() {5, 61, 34}, new List<int>() {1, 2, 3});
 				break;
 		}
 

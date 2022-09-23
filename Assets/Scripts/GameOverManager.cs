@@ -30,6 +30,11 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
+    private void onDestroy()
+	{
+		RestartGame();
+	}
+
     public void RestartGame()
     {
         MosquitoesManager.instance.DestroyAll();

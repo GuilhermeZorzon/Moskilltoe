@@ -96,7 +96,6 @@ public class Mosquitoe : MonoBehaviour
         {
             int randomLetterIndex = Random.Range(0, lettersToAssign.Count);
             this.assignedText.Add(lettersToAssign[randomLetterIndex]);
-            Debug.Log("Mosquitoe " + id + " has letter " + assignedText);
         }
         currentAssignedText = this.assignedText;
     }

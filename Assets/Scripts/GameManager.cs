@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     
-    public GameState gameState = GameState.PlayerTurn;
+    public GameState gameState = GameState.GameOver;
 
     public static event Action<GameState> OnGameStateChanged;
 
@@ -20,11 +20,16 @@ public class GameManager : MonoBehaviour
     {
         UpdateGameState(GameState.SpawningMosquitoes);
     }
+
     public void UpdateGameState(GameState newState)
     {
+        if(this.gameState == newState) 
+        {
+            return;
+        }
+        Debug.Log("Update game state " + newState);
         this.gameState = newState;
-
-        switch (newState) 
+        switch (newState)
         {
             case GameState.PlayerTurn:
                 onGameStateChangeToPlayerTurn();

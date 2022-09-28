@@ -7,18 +7,23 @@ public class GameOverManager : MonoBehaviour
 {
     public static GameOverManager instance;
     public bool isGameOver {get; private set;} = false;
-    [SerializeField] Canvas gameOverCanvas;
+    GameObject gameOverCanvasGameObject;
 
     void Awake()
     {
         instance = this;
     }
 
+    void Start()
+    {
+        gameOverCanvasGameObject = GameObject.Find("/GameOverCanvas");
+    }
+
     void Update()
     {
-        if(isGameOver && !Mosquitoe.instance.isFlying)
+        if(isGameOver)
         {
-            gameOverCanvas.GetComponent<Canvas>().enabled = true;
+            gameOverCanvasGameObject.GetComponent<Canvas>().enabled = true;
         }
     }
 
@@ -30,17 +35,13 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
-    private void onDestroy()
-	{
-		RestartGame();
-	}
-
     public void RestartGame()
     {
+        Debug.Log("Calling restart game");
         MosquitoesManager.instance.DestroyAll();
         MosquitoeSpawner.instance.ResetData();
         this.isGameOver = false;
-        gameOverCanvas.GetComponent<Canvas>().enabled = false;
+        gameOverCanvasGameObject.GetComponent<Canvas>().enabled = false;
         GameManager.instance.UpdateGameState(GameState.SpawningMosquitoes);
     }
 }

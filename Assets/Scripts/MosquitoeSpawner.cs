@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using System.Threading.Tasks;
-using UnityEngine.UI;
 
 public class MosquitoeSpawner : MonoBehaviour
 {
@@ -20,13 +19,14 @@ public class MosquitoeSpawner : MonoBehaviour
 
 	void Awake()
 	{
+		Debug.Log("Awakes the spawner at " + System.DateTime.Now.ToLongTimeString());
 		instance = this;
 		GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
 	}
 
 	private async void GameManagerOnGameStateChanged(GameState state)
 	{
-		if(GameManager.instance.gameState == GameState.SpawningMosquitoes)
+		if(this && (this.gameObject) && (state == GameState.SpawningMosquitoes))
 		{
 			await SpawnMosquitoes();
 			this.waveCount++;
@@ -63,7 +63,8 @@ public class MosquitoeSpawner : MonoBehaviour
 		var positionToSpawn = FindPositionToSpawn();
 		Mosquitoe mosquitoe = Instantiate(mosquitoePrefab, positionToSpawn, Quaternion.identity);
 		mosquitoe._scriptedMosquitoe = scriptedMosquitoe;
-		mosquitoe.transform.SetParent(gameObject.transform, false);
+		var spawnedMosquitoesGameObject = GameObject.Find("/SpawnedMosquitoes");
+		mosquitoe.transform.SetParent(spawnedMosquitoesGameObject.gameObject.transform, false);
 		
 		spawnedMosquitoes.Add(mosquitoe);
 		IncreaseMosquitoeCount();

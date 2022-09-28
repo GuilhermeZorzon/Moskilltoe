@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Mosquitoe : MonoBehaviour
 {
-    public static Mosquitoe instance;
     public ScriptedMosquitoe _scriptedMosquitoe;
     public SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
@@ -36,7 +35,6 @@ public class Mosquitoe : MonoBehaviour
 
     void Awake()
 	{
-        instance = this;
         _rb = GetComponent<Rigidbody2D>();
 	}
 

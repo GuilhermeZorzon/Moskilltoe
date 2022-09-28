@@ -11,6 +11,7 @@ public class MosquitoesManager : MonoBehaviour
 
     void Awake()
 	{
+        Debug.Log("Awakes the mosquitoe manager at " + System.DateTime.Now.ToLongTimeString());
         instance = this;
         _rb = GetComponent<Rigidbody2D>();
         GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
@@ -18,7 +19,7 @@ public class MosquitoesManager : MonoBehaviour
 
     private async void GameManagerOnGameStateChanged(GameState state)
     {
-        if(GameManager.instance.gameState == GameState.MosquitoesTurn)
+        if(this && this.gameObject && state == GameState.MosquitoesTurn)
         {
             var tasks = new List<Task>();
             foreach (Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)

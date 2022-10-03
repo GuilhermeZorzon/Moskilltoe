@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class Mosquitoe : MonoBehaviour
 {
-    public static Mosquitoe instance;
     public ScriptedMosquitoe _scriptedMosquitoe;
     public SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
-    public string id {get; private set;}
+    [SerializeField] public string id {get; private set;}
     public List<string> assignedText = new List<string>();
     public List<string> currentAssignedText;
     private List<string> lettersToAssign = new List<string>() {
@@ -36,7 +35,6 @@ public class Mosquitoe : MonoBehaviour
 
     void Awake()
 	{
-        instance = this;
         _rb = GetComponent<Rigidbody2D>();
 	}
 
@@ -69,7 +67,7 @@ public class Mosquitoe : MonoBehaviour
     public async Task FlyMosquitoes()
     {
         // Fly and then pass turn to spawner
-        if(this && !this.isDestoyed)
+        if (this && this.gameObject && !this.isDestoyed)
         {
             this.isFlying = true;
             this._scriptedMosquitoe.flySound.Play();
@@ -96,7 +94,6 @@ public class Mosquitoe : MonoBehaviour
         {
             int randomLetterIndex = Random.Range(0, lettersToAssign.Count);
             this.assignedText.Add(lettersToAssign[randomLetterIndex]);
-            Debug.Log("Mosquitoe " + id + " has letter " + assignedText);
         }
         currentAssignedText = this.assignedText;
     }

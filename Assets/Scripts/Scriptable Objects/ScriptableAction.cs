@@ -8,7 +8,6 @@ public abstract class ScriptableAction : ScriptableObject
 
     protected void DestroyMosquitoe(Mosquitoe mosquitoe) 
     {
-      Debug.Log("destoyed this one: " + mosquitoe.id + " with letter " + mosquitoe.assignedText);
       MosquitoeSpawner.instance.DecreaseMosquitoeCounter();
       Destroy(mosquitoe.gameObject);
     }

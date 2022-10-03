@@ -8,9 +8,7 @@ public class KeyboardManager : MonoBehaviour
     public static KeyboardManager instance;
     int chosenLettersCount = 0;
     List<string> chosenLetters = new List<string>();
-
-    [SerializeField] Text playersTurnText;
-    [SerializeField] Canvas keyboardCanvas;
+    GameObject keyboardCanvasGameObject;
     public ScriptableSound buttonSelectSound;
 
     void Awake()
@@ -19,10 +17,18 @@ public class KeyboardManager : MonoBehaviour
         GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
     }
 
+    void Start()
+    {
+        keyboardCanvasGameObject = GameObject.Find("/KeyboardCanvas");
+    }
+
     private void GameManagerOnGameStateChanged(GameState state)
     {
-        keyboardCanvas.gameObject.SetActive(state == GameState.PlayerTurn);
-        if(GameManager.instance.gameState == GameState.KillingMosquitoes)
+        if (keyboardCanvasGameObject)
+        {
+            this.keyboardCanvasGameObject.GetComponent<Canvas>().enabled = (state == GameState.PlayerTurn);
+        }
+        if (state == GameState.KillingMosquitoes)
         {
             killMosquitoes();
         }
@@ -39,7 +45,8 @@ public class KeyboardManager : MonoBehaviour
         {
             buttonSelectSound.Play();
             increaseChosenLettersCount();
-            chosenLetters.Add(letter);
+            this.chosenLetters.Add(letter);
+
             if(this.chosenLettersCount == 3)
             {
                 GameManager.instance.UpdateGameState(GameState.KillingMosquitoes);
@@ -50,15 +57,19 @@ public class KeyboardManager : MonoBehaviour
 
     public void killMosquitoes()
     {
-        // Kill mosquitoes and pass turn to them
-        foreach(string letter in chosenLetters)
+        checkChosenLetters();
+        MosquitoeSpawner.instance.removeMosquitoes();
+        this.chosenLetters = new List<string>();
+        GameManager.instance.UpdateGameState(GameState.MosquitoesTurn);
+    }
+
+    public void checkChosenLetters()
+    {
+         // Kill mosquitoes and pass turn to them
+        foreach (string letter in chosenLetters)
         {
             MosquitoesManager.instance.checkChosenLetter(letter);
         }
-
-        MosquitoeSpawner.instance.removeMosquitoes();
-        chosenLetters = new List<string>();
-        GameManager.instance.UpdateGameState(GameState.MosquitoesTurn);
     }
 
     void increaseChosenLettersCount()

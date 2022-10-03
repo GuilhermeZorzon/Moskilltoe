@@ -18,7 +18,7 @@ public class MosquitoesManager : MonoBehaviour
 
     private async void GameManagerOnGameStateChanged(GameState state)
     {
-        if(GameManager.instance.gameState == GameState.MosquitoesTurn)
+        if(this && this.gameObject && state == GameState.MosquitoesTurn)
         {
             var tasks = new List<Task>();
             foreach (Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)
@@ -28,7 +28,6 @@ public class MosquitoesManager : MonoBehaviour
             await Task.WhenAll(tasks);
             if(!GameOverManager.instance.isGameOver)
             {
-                Debug.Log("Passing turn to spawner");
                 GameManager.instance.UpdateGameState(GameState.SpawningMosquitoes);
             }
         }
@@ -51,7 +50,6 @@ public class MosquitoesManager : MonoBehaviour
     {
         foreach (Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)
         {
-            Debug.Log("Destroying a mosquitoe " + mosquitoe._scriptedMosquitoe.speed);
             mosquitoe.isDestoyed = true;
             Destroy(mosquitoe.gameObject);
         }

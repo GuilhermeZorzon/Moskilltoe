@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     
-    public GameState gameState = GameState.PlayerTurn;
+    public GameState gameState = GameState.GameOver;
 
     public static event Action<GameState> OnGameStateChanged;
 
@@ -20,11 +20,15 @@ public class GameManager : MonoBehaviour
     {
         UpdateGameState(GameState.SpawningMosquitoes);
     }
+
     public void UpdateGameState(GameState newState)
     {
+        if(this.gameState == newState) 
+        {
+            return;
+        }
         this.gameState = newState;
-
-        switch (newState) 
+        switch (newState)
         {
             case GameState.PlayerTurn:
                 onGameStateChangeToPlayerTurn();
@@ -55,21 +59,12 @@ public class GameManager : MonoBehaviour
     
     private void onGameStateChangeToKillingMosquitoes()
     {
-        // KeyboardManager.instance.killMosquitoes();
+        // Do nothing
     }
 
     private void onGameStateChangeToMosquitoesTurn()
     {
-        // if (MosquitoeSpawner.instance.spawnedMosquitoes.Count > 0)
-        // {
-        //     // If there are alive mosquitoes, make them fly
-        //     foreach(Mosquitoe mosquitoe in MosquitoeSpawner.instance.spawnedMosquitoes)
-        //     {
-        //         StartCoroutine(mosquitoe.FlyMosquitoes());
-        //     }
-        // }
-        // // If there aren't alive mosquitoes, pass turn to spawner
-        // UpdateGameState(GameState.SpawningMosquitoes);
+        // Do nothing
     }
 
     private void onGameStateChangeToSpawningMosquitoes()
@@ -79,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     private void onGameStateChangeToGameOver()
     {
-        Debug.Log("You Lost");
+        // Do nothing
     }
 }
 

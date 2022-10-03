@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a342ff437c95c4f979aae2c28830f6, type: 3}
-  m_Name: HighPitchFlySound
+  m_Script: {fileID: 11500000, guid: dfcd91fdea7500d4c9369cd0ffdba110, type: 3}
+  m_Name: DefaultChooseLetterAction
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: e86ff4b07f761ed43bb8882eed15d226, type: 3}
-  volume: 0.5
-  pitch: 1

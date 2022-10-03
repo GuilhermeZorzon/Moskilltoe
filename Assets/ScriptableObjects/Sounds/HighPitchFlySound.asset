@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HighPitchFlySound
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: e86ff4b07f761ed43bb8882eed15d226, type: 3}
-  volume: 0.65
+  volume: 0.5
   pitch: 1

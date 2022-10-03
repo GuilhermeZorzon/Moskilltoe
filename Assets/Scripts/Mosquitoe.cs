@@ -9,7 +9,7 @@ public class Mosquitoe : MonoBehaviour
     public ScriptedMosquitoe _scriptedMosquitoe;
     public SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
-    public string id {get; private set;}
+    [SerializeField] public string id {get; private set;}
     public List<string> assignedText = new List<string>();
     public List<string> currentAssignedText;
     private List<string> lettersToAssign = new List<string>() {
@@ -67,7 +67,7 @@ public class Mosquitoe : MonoBehaviour
     public async Task FlyMosquitoes()
     {
         // Fly and then pass turn to spawner
-        if(this && !this.isDestoyed)
+        if (this && this.gameObject && !this.isDestoyed)
         {
             this.isFlying = true;
             this._scriptedMosquitoe.flySound.Play();

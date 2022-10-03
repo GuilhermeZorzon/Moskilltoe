@@ -37,7 +37,6 @@ public class GameOverManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("Calling restart game");
         MosquitoesManager.instance.DestroyAll();
         MosquitoeSpawner.instance.ResetData();
         this.isGameOver = false;

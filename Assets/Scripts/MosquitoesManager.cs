@@ -11,7 +11,6 @@ public class MosquitoesManager : MonoBehaviour
 
     void Awake()
 	{
-        Debug.Log("Awakes the mosquitoe manager at " + System.DateTime.Now.ToLongTimeString());
         instance = this;
         _rb = GetComponent<Rigidbody2D>();
         GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;

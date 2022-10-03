@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        Debug.Log("Update game state " + newState);
         this.gameState = newState;
         switch (newState)
         {

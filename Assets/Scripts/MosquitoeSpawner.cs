@@ -19,7 +19,6 @@ public class MosquitoeSpawner : MonoBehaviour
 
 	void Awake()
 	{
-		Debug.Log("Awakes the spawner at " + System.DateTime.Now.ToLongTimeString());
 		instance = this;
 		GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
 	}

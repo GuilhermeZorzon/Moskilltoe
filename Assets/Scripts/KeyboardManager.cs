@@ -57,14 +57,19 @@ public class KeyboardManager : MonoBehaviour
 
     public void killMosquitoes()
     {
-        // Kill mosquitoes and pass turn to them
-        foreach(string letter in this.chosenLetters)
-        {
-            MosquitoesManager.instance.checkChosenLetter(letter);
-        }
+        checkChosenLetters();
         MosquitoeSpawner.instance.removeMosquitoes();
         this.chosenLetters = new List<string>();
         GameManager.instance.UpdateGameState(GameState.MosquitoesTurn);
+    }
+
+    public void checkChosenLetters()
+    {
+         // Kill mosquitoes and pass turn to them
+        foreach (string letter in chosenLetters)
+        {
+            MosquitoesManager.instance.checkChosenLetter(letter);
+        }
     }
 
     void increaseChosenLettersCount()
